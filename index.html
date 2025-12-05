@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathOnline - Matematika Kursi</title>
+    <script defer src="./app.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+   
+</head>
+<body>
+    <div class="top-bar">
+        <a href="#" class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-square-root-alt"></i>
+            </div>
+            <span>MathOnline</span>
+        </a>
+        
+        <div class="controls">
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="uz">UZ</button>
+                <button class="lang-btn" data-lang="ru">RU</button>
+            </div>
+            
+            <button class="control-btn" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <span>Dark Mode</span>
+            </button>
+            
+            <button class="control-btn" id="register-btn">
+                <i class="fas fa-user-plus"></i>
+                <span>Ro'yxatdan o'tish</span>
+            </button>
+        </div>
+    </div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Matematika Onson O'rganing</h1>
+            <p>3-sinfdan yuqori o'quvchilar uchun interaktiv onlayn kurs</p>
+            
+            <div class="telegram-badge">
+                <i class="fab fa-telegram"></i>
+                <span>Telegram orqali qo'shiling!</span>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="#pricing" class="btn-primary">
+                    <i class="fas fa-gem"></i>
+                    <span>Kurs Paketlari</span>
+                </a>
+                <a href="https://t.me/Onlain_natija_bot" target="_blank" class="btn-secondary">
+                    <i class="fab fa-telegram"></i>
+                    <span>Telegram Botga O'tish</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="stats">
+        <div class="stat-item">
+            <span class="stat-number">1000+</span>
+            <span class="stat-label">O'quvchi</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">150+</span>
+            <span class="stat-label">Video Dars</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Muvaffaqiyat</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Qo'llab-quvvatlash</span>
+        </div>
+    </div>
+
+    <section id="for">
+        <h2 class="section-title">Kurs Kimlar Uchun?</h2>
+        <div class="for-cards">
+            <div class="for-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Majburiy Matematika</h3>
+                <p>Majburiy matematikaga tayyorlanmoqchilar uchun</p>
+            </div>
+            <div class="for-card">
+                <i class="fas fa-school"></i>
+                <h3>Ixtisoslashtirilgan Maktablar</h3>
+                <p>Prezident va Al-Xorazmiy maktablari uchun</p>
+            </div>
+            <div class="for-card">
+                <i class="fas fa-layer-group"></i>
+                <h3>Fundament Qo'yish</h3>
+                <p>Matematika asoslarini mustahkam qilish</p>
+            </div>
+            <div class="for-card">
+                <i class="fas fa-book-open"></i>
+                <h3>Maktab Darsligi</h3>
+                <p>3-sinf va undan yuqori o'quvchilar uchun</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="pricing">
+        <h2 class="section-title">Kurs Paketlari</h2>
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Bronze</h3>
+                    <div class="price">99 000</div>
+                    <div class="period">60 kun</div>
+                </div>
+                <div class="pricing-body">
+                    <ul class="features-list">
+                        <li>Tayyor video darsliklar</li>
+                        <li>PDF misollar + vazifalar</li>
+                        <li>Ustozdan yordam</li>
+                        <li>60 kun o'qish vaqti</li>
+                    </ul>
+                    <button class="pricing-btn buy-package" data-package="bronze">
+                        <i class="fas fa-shopping-cart"></i> Sotib olish
+                    </button>
+                </div>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Silver</h3>
+                    <div class="price">149 000</div>
+                    <div class="period">100 kun</div>
+                </div>
+                <div class="pricing-body">
+                    <ul class="features-list">
+                        <li>Tayyor video darsliklar</li>
+                        <li>PDF vazifalar</li>
+                        <li>100 kun o'qish vaqti</li>
+                        <li>Mavzu bo'yicha testlar</li>
+                        <li>Ustozdan yordam</li>
+                    </ul>
+                    <button class="pricing-btn buy-package" data-package="silver">
+                        <i class="fas fa-shopping-cart"></i> Sotib olish
+                    </button>
+                </div>
+            </div>
+
+            <div class="pricing-card popular">
+                <div class="pricing-header">
+                    <h3>Gold</h3>
+                    <div class="price">199 000</div>
+                    <div class="period">195 kun</div>
+                </div>
+                <div class="pricing-body">
+                    <ul class="features-list">
+                        <li>Tayyor video darsliklar</li>
+                        <li>PDF vazifalar</li>
+                        <li>195 kun o'qish vaqti</li>
+                        <li>Test + test tahlili</li>
+                        <li>Ustozdan yordam</li>
+                        <li>2 haftada 1 marta takror dars</li>
+                        <li>DTM testlar tahlili</li>
+                    </ul>
+                    <button class="pricing-btn buy-package" data-package="gold">
+                        <i class="fas fa-crown"></i> Tanlash
+                    </button>
+                </div>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Platinum</h3>
+                    <div class="price">999 000</div>
+                    <div class="period">365 kun</div>
+                </div>
+                <div class="pricing-body">
+                    <ul class="features-list">
+                        <li>Tayyor video darsliklar</li>
+                        <li>To'liq vazifalar</li>
+                        <li>365 kun o'qish vaqti</li>
+                        <li>Testlar + video tahlil</li>
+                        <li>Ustozdan yordam</li>
+                        <li>2 haftada 1 marta takror dars</li>
+                        <li>DTM testlar video tahlili</li>
+                        <li>Murakkab misollar tahlili</li>
+                    </ul>
+                    <button class="pricing-btn buy-package" data-package="platinum">
+                        <i class="fas fa-gem"></i> Premium
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>MathOnline</h3>
+                <p>3-sinfdan yuqori o'quvchilar uchun eng sifatli matematika kursi</p>
+            </div>
+            <div>
+                <h4>Bog'lanish</h4>
+                <p><i class="fas fa-phone"></i> +998 33-333-5001</p>
+                <p><i class="fab fa-telegram"></i> @ilmislomnurdir</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 MathOnline. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="registration-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Ro'yxatdan o'tish</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            
+            <form id="registration-form">
+                <div class="form-group">
+                    <label>Ism Familiya</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Telefon raqam</label>
+                    <input type="tel" id="phone" class="form-control" placeholder="+998 XX XXX XX XX" required>
+                </div>
+                
+                
+                
+                <div class="form-group">
+                    <label>Kurs paketi</label>
+                    <select id="package" class="form-control" required>
+                        <option value="">Tanlang</option>
+                        <option value="bronze">Bronze Paket</option>
+                        <option value="silver">Silver Paket</option>
+                        <option value="gold">Gold Paket</option>
+                        <option value="platinum">Platinum Paket</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Telegram Botga O'tish</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>
